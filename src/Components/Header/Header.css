@@ -1,0 +1,33 @@
+.header-container img{
+    width: 100%;
+    height: 200px;
+}
+.header-container{
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    background:url(../../Photo/background.png) no-repeat center;
+    background-size: cover;
+    opacity: 0.7;
+    
+}
+.title{
+    font-size: 30px;
+    border: 10px solid purple;
+    text-transform: uppercase;
+  letter-spacing:2px;
+  color:purple;
+  padding:5px
+}
+.d{
+    position:absolute;
+    top: 40%;
+    left:40%;
+}
+@media(max-width:1440px){
+  .d{
+      font-size:20px;
+      left: 40% ;
+  }
+}

@@ -1,0 +1,85 @@
+.teamBadge img{
+width:250px;
+margin-top: -50px;
+margin-right:50px;
+}
+
+.team-container{
+    background-color:#d5d5d5;
+    padding: 20px 0;
+}
+
+.info-div{
+    width:80%;
+    margin: 0 auto; 
+    margin-top:50px;
+    background-color:#17a2b8;
+    border: 12px solid #17a2b8;
+    border-radius: 15px;
+    height: 265px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.social-links{
+        display:flex;
+        justify-content:space-between;
+        width:400px;
+        margin: 50px auto;
+
+}
+
+.social-links a{
+    text-decoration: none;
+    color: black;
+}
+.descriptions{
+    width:80%;
+    margin: 30px auto;
+    text-align: justify;
+    font-size:large;
+    word-spacing: 5px;
+    
+
+}
+
+.team-info{
+    float: right;
+    color: white;
+    line-height:30px;
+   padding:40px;
+
+   
+   
+}
+.team-photo{
+   float: left;
+   padding:10px;
+    justify-content: space-between;
+    width: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1080){
+    .teamBadge img{
+        width:200px;
+        
+        }
+}
