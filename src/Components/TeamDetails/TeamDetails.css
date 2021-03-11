@@ -29,7 +29,8 @@ width:200px;
         display:flex;
         justify-content:space-between;
         width:20%;
-        margin: 50px auto;
+        margin: 0px auto;
+        padding-bottom: 50px;
 
 }
 
