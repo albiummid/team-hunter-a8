@@ -9,10 +9,10 @@ const Header = (props) => {
                 <img src={logo} className="logo" alt="" />
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Teams</a></li>
-                        <li><a href="">Materials</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Teams</a></li>
+                        <li><a href="/">Materials</a></li>
+                        <li><a href="/">About Us</a></li>
                     </ul>
                 </nav>
                 <img src={menuIcon} className="menu-icon" alt="" />
