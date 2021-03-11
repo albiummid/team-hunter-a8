@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Header from '../Header/Header';
 import "./TeamDetails.css";
 import male from '../../Photo/male.png'
 import female from '../../Photo/female.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook,faInstagram,faYoutube, } from '@fortawesome/free-brands-svg-icons'
-import { faMapMarkedAlt,faFlag,faFutbol,faVenusMars,faLink } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faMapMarkedAlt, faFlag, faFutbol, faVenusMars, faLink } from '@fortawesome/free-solid-svg-icons';
+
 const TeamDetails = () => {
+
     const [team, setTeam] = useState([]);
     const {id} = useParams()
 
@@ -17,10 +19,9 @@ const TeamDetails = () => {
         .then(response =>response.json())
         .then(data => setTeam(data.teams[0]))
     }, [id])
-  console.log(team);
 
-    const { strTeamBadge, intFormedYear, strCountry, strGender, strSport, strTeam, strDescriptionEN, strYoutube, strFacebook, strInstagram, strWebsite,strStadiumDescription } = team;
-    console.log(strFacebook);
+    const { strTeamBadge, intFormedYear, strCountry, strGender, strSport, strTeam, strDescriptionEN, strYoutube, strFacebook, strInstagram,strTwitter, strWebsite,strStadiumDescription } = team;
+    const linkPrefix = 'https://';
     return (
         <div className='team-container'>
             <Header> <div className="teamBadge"> <img src={strTeamBadge} alt="" /> </div> </Header>
@@ -52,10 +53,15 @@ const TeamDetails = () => {
             </div>
 
             <div className="social-links">
-                <Link to={{ pathname: `https://${strFacebook}` }} target="_blank" > <FontAwesomeIcon icon={faFacebook} size="2x" />  </Link>
-                <Link to={{ pathname: `https://${strInstagram}` }} target="_blank" > <FontAwesomeIcon icon={faInstagram} size="2x" />  </Link>
-                <Link to={{ pathname: `https://${strYoutube}` }} target="_blank" > <FontAwesomeIcon icon={faYoutube} size="2x" />  </Link>
-                <Link to={{ pathname: `https://${strWebsite}` }} target="_blank" > <FontAwesomeIcon icon={faLink} size="2x" /> </Link> 
+                <a href={linkPrefix + strFacebook}><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+                
+                <a href={linkPrefix + strInstagram}><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+                
+                <a href={linkPrefix + strYoutube}><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+
+                <a href={linkPrefix + strWebsite}><FontAwesomeIcon icon={faLink} size="2x" /></a>
+
+                <a href={linkPrefix + strTwitter}><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
             </div>
             
             

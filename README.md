@@ -6,7 +6,7 @@
 ### The Repository Link: [programming-Hero-Web-Course/react-router-albiummid](https://github.com/Porgramming-Hero-web-course/react-router-albiummid)
 
 
-###Features:
+### Features:
 
 1.Dynamic Data loaded from [TheSportsDB](https://www.thesportsdb.com/api.php) website.
 
@@ -22,6 +22,7 @@
 
 7.This details page can genarate every team's social link and business website.
 
+8.Fully responsive for mobile,tablets,Desktop by <b> Clean </b> CSS without Bootstrap and Material UI;
 
 
                                //--- Happy-Coding ---//

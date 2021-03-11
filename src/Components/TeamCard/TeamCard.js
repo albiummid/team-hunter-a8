@@ -6,7 +6,6 @@ const TeamCard = (props) => {
 
     const { strTeamBadge, strTeam,idTeam ,strSport} = props.team;
     const clickHandler = props.clickHandler;
-    console.log(idTeam);
     return (
         <div className="teamCard">
                 <img src={strTeamBadge} alt=""/>

@@ -18,13 +18,12 @@ const Home = () => {
         console.log(id);
         const url = `/details/${id}`;
         history.push(url);
-        console.log("clicked");
     }
 
     return (
         <div div className="homeContainer">
             <Header> <div className="title">
-            <h1>Team Hunter</h1>
+            <h1> />/---Team Hunter---/>/ </h1>
             </div></Header>
             <div className="cardHolder">
             {

@@ -6,19 +6,21 @@
     background:url(../../Photo/background.png) no-repeat center;
     background-size: cover;
     opacity: 0.7;
-    
 }
 .title{
   margin-top:150px;
  text-align: center;
     font-size: 30px;
   letter-spacing:2px;
-  color:purple;
-  padding:5px
+  color:black;
+  ;
+  padding:5px;
 }
+
+
 
 @media(max-width:900px){
   .title{
-  font-size: 20px;
+  font-size: 12px;
 }
 }
