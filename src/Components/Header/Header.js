@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Header.css"
+import "./Header.css";
 import logo from '../../Photo/team-hunter.png';
 import menuIcon from '../../Photo/menu.png';
 const Header = (props) => {
@@ -17,7 +17,7 @@ const Header = (props) => {
                 </nav>
                 <img src={menuIcon} className="menu-icon" alt="" />
             </div>
-            <div className="header-container">
+            <div className="banner-container">
         
                 {
                     props.children

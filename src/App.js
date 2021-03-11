@@ -11,8 +11,7 @@ import {
 function App() {
   return (
     <Router>
-      <Switch>
-      
+      <Switch> 
 
         <Route path="/home">
          <Home></Home>
@@ -29,7 +28,6 @@ function App() {
         <Route path="*">
           <NoMatch></NoMatch>
         </Route>
-
 
       </Switch>
   </Router>

@@ -9,7 +9,7 @@ const Home = () => {
     useEffect(() => {
         const url = "https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League";
         fetch(url)
-        .then(response => response.json())
+            .then(response => response.json())
             .then(data => setTeams(data.teams))
     }, [])
 
@@ -23,16 +23,14 @@ const Home = () => {
     return (
         <div div className="homeContainer">
             <Header> <div className="title">
-            <h1> />/---Team Hunter---/>/ </h1>
+                <h1> />/---Team Hunter---/>/ </h1>
             </div></Header>
             <div className="cardHolder">
-            {
-                teams.map(team => <TeamCard clickHandler={clickHandler} team={team}> </TeamCard>)
-            }
+                {
+                    teams.map(team => <TeamCard clickHandler={clickHandler} team={team}> </TeamCard>)
+                }
             </div>
-          
-
-            </div>
+        </div>
     );
 };
 
