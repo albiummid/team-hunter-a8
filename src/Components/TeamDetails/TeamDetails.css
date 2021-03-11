@@ -1,7 +1,11 @@
 .teamBadge img{
-width:250px;
-margin-top: -50px;
-margin-right:50px;
+width:200px;
+
+
+}
+.teamBadge{
+    text-align:center;
+    margin-top:100px;
 }
 
 .team-container{
@@ -24,7 +28,7 @@ margin-right:50px;
 .social-links{
         display:flex;
         justify-content:space-between;
-        width:400px;
+        width:20%;
         margin: 50px auto;
 
 }
@@ -44,7 +48,6 @@ margin-right:50px;
 }
 
 .team-info{
-    float: right;
     color: white;
     line-height:30px;
    padding:40px;
@@ -53,33 +56,26 @@ margin-right:50px;
    
 }
 .team-photo{
-   float: left;
    padding:10px;
     justify-content: space-between;
-    width: 450px;
+    width: 400px;
+
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:1080){
-    .teamBadge img{
-        width:200px;
-        
-        }
+@media(max-width:900px){
+    .info-div{   
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .team-photo{
+        padding:10px;
+         justify-content: space-between;
+         width: 100%;  
+     }
+     .social-links{
+         width:40%;
+     }
 }

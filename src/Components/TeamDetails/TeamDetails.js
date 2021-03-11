@@ -55,7 +55,7 @@ const TeamDetails = () => {
                 <Link to={{ pathname: `https://${strFacebook}` }} target="_blank" > <FontAwesomeIcon icon={faFacebook} size="2x" />  </Link>
                 <Link to={{ pathname: `https://${strInstagram}` }} target="_blank" > <FontAwesomeIcon icon={faInstagram} size="2x" />  </Link>
                 <Link to={{ pathname: `https://${strYoutube}` }} target="_blank" > <FontAwesomeIcon icon={faYoutube} size="2x" />  </Link>
-                <Link to={{ pathname: `https://${strWebsite}` }} target="_blank" > <FontAwesomeIcon icon={faLink} size="2x" /> </Link>   
+                <Link to={{ pathname: `https://${strWebsite}` }} target="_blank" > <FontAwesomeIcon icon={faLink} size="2x" /> </Link> 
             </div>
             
             
