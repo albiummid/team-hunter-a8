@@ -15,7 +15,6 @@ const Home = () => {
 
     const history = useHistory();
     const clickHandler = (id) => {
-        console.log(id);
         const url = `/details/${id}`;
         history.push(url);
     }
