@@ -5,8 +5,9 @@ import menuIcon from '../../Photo/menu.png';
 const Header = (props) => {
     return (
         <div className="header">
-                <div className="navbar">
-                <img src={logo} className="logo" alt="" />
+            <div className="navbar">
+                <a href="/home"> <img src={logo} className="logo" alt="" /> </a>
+                
                 <nav>
                     <ul>
                         <li><a href="/">Home</a></li>
